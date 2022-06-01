@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+html,
+body {
+    width: .25fr;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    @font-face {
+        font-family: Roboto;
+        src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+    }
+    font-weight:bold;
+}
+
+#imageUpload {
+    display: none;
+}
+
+#profileImage {
+    cursor: pointer;
+    fill: black;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.container {
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1.25fr 1.3fr 1fr 5fr 1.25fr;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+.sidebar {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #1992d4;
+    color: white;
+}
+
+.nav {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #ffffff;
+}
+
+.article {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #e2e8f0;
+}
+
+.navBot {
+    display: flex;
+    flex-direction: row;
+}
+
+.navTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.SubNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.SubText {
+    margin-left: 12px;
+}
+
+.dashText {
+    margin-left: 7px;
+    font-size: 24px;
+}
+
+.subNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 7px;
+}
+
+#search {
+    background-color: white;
+    border-color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+#search[type=text] {
+    background-color: #e2e8f0;
+    width: 700px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.userId {
+    margin-right: 20px;
+}
+
+.notif {
+    margin-right: 20px;
+}
+
+.rightTop {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.leftTop {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.navBot {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.userInfo {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.Name2 {
+    font-weight: bolder;
+    font-size: large;
+}
+
+input[value=New],
+input[value=Upload],
+input[value=Share] {
+    color: white;
+    background-color: #1992d4;
+    border-radius: 20px;
+    padding: 10px;
+    border-color: #1992d4;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.coolBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttRight {
+    display: flex;
+    align-items: center;
+}
+
+.spaceStart,
+.spaceEnd {
+    background-color: #26282a;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.article {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr .3fr;
+}
+
+.projects {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #f0b429 3%, white 0%);
+}
+
+.sideEvent {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 8px;
+    display: grid;
+    grid-template-rows: 43px repeat(1, minmax(250px, 1fr)) 20px repeat(1, minmax(250px, 1fr));
+}
+
+.words {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 25px;
+    height: 100px;
+}
+
+.Anounce {
+    background-color: white;
+    border-radius: 10px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-right: 10px;
+}
+
+.Trends {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-bottom: 24px;
+    margin-right: 10px;
+}
+
+.describe {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.doer {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.anounceItems {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 1px;
+    margin-right: 10px;
+    font-size: small;
+    background: linear-gradient(to top, grey 1%, white 0%);
+}
+
+.side {
+    font-weight: lighter;
+    font-size: x-small;
+}
+
+.anounceItem {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 1px;
+    margin-right: 10px;
+    font-size: small;
+}
+
+.help {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+}
+
+.trendItems {
+    background: linear-gradient(to top, grey 2%, white 0%);
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+}
+
+.trendItem {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 1px;
+    margin-right: 10px;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+}
+
+.important {
+    margin-left: 10px;
+}
+
+.atribI {
+    font-weight: lighter;
+    font-size: x-small;
+}
+
+.imageDirectors {
+    width: 85px;
+    height: 30px;
+    margin-left: 300px;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: .25fr 1fr .2fr;
+    grid-template-rows: .25fr 1fr .2fr;
+}
+
+.titleB {
+    height: 30px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+.subTextB {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 350px;
+    margin-left: 21px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
